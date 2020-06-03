@@ -1,17 +1,17 @@
-# Title
+# Mablibs
 
-#### Latest version date
+#### Latest version date 6/3/2020
 
-#### By Deryck Jackson
+#### By Deryck Jackson Ian Scott
 
 ## Description
 
-
+Mablibs website for practicing jquery forms fill.
 
 ## Setup and Installation
 
 * Clone repo to your PC
-* Browse to _ _ directory
+* Browse to _mablibs_ directory
 * Open _index.html_ in your browser
 
 ## Bugs
