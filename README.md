@@ -2,7 +2,7 @@
 
 #### Latest version date 6/3/2020
 
-#### By Deryck Jackson Ian Scott
+#### By Deryck Jackson, Ian Scott and Ester Tataje
 
 ## Description
 

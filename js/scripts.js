@@ -1,25 +1,22 @@
 $(document).ready(function() {
   $("#formOne").submit(function(event) {
-    const person1Input = $("input#person1").val();
-    const person2Input = $("input#person2").val();
-    const animalInput= $("input#animal").val();
-    const exclamationInput = $("input#exclamation").val();
-    const adverbInput = $("input#verb").val();
-    const verbInput = $("input#verb").val();
-    const adjInput = $("input#adj").val();
-    const nounInput = $("input#noun").val();
+    event.preventDefault();
 
-    $(".person1").text(person1Input);
-    $(".person2").text(person2Input);
-    $(".animal").text(animalInput);
-    $(".exclamation").text(exclamationInput);
-    $(".adverb").text(adverbInput);
-    $(".verb").text(verbInput);
-    $(".adj").text(adjInput);
-    $(".noun").text(nounInput);
+    const storyClasses = [".person1", ".person2", ".animal", ".exclamation", ".adverb", ".verb", ".adj", ".noun"]
+    let inputs = [];
+    inputs.push($("input#person1").val());
+    inputs.push($("input#person2").val());
+    inputs.push($("input#animal").val());
+    inputs.push($("input#exclamation").val());
+    inputs.push($("input#verb").val());
+    inputs.push($("input#verb").val());
+    inputs.push($("input#adj").val());
+    inputs.push($("input#noun").val());
+
+    inputs.forEach(function(input, index) {
+      $(storyClasses[index]).text(input);
+    })
 
     $("#story").show();
-
-    event.preventDefault();
   });
 });
